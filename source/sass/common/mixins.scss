@@ -1,0 +1,39 @@
+@mixin pseudo {
+  position: absolute;
+  content: "";
+}
+
+@mixin roboto {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+}
+
+@mixin bebasNeue {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-style: normal;
+}
+
+// @mixin placeholder {
+//   @include mono;
+//   font-weight: normal;
+//   font-size: 16px;
+//   line-height: 22px;
+//   color: #ffffff;
+// }
+
+// @mixin button {
+//   @include roboto;
+//   box-sizing: border-box;
+//   width: 287px;
+//   margin: 0 auto;
+//   font-weight: bold;
+//   letter-spacing: 0.9px;
+//   text-align: center;
+//   text-transform: uppercase;
+//   border-radius: 5px;
+//   cursor: pointer;
+
+//   &:focus,
+//   &:hover {
+//     opacity: 0.7;
+//   }
+// }
