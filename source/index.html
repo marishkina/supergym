@@ -7,12 +7,94 @@
     <meta name="description" content="Supergym – фитнес центр за Уралом на 900 квадратный метров, место для укрепления тела и здоровья. Тренажерный зал оснащен оборудованием для профессиональных спортсменов. Отдельная зона для Crossfit и кардио-зона с 40 тренажерами, оборудованные залы для групповых занятий.">
     <title>Supergym - современное оборудование, просторные залы, отдельная зона для Crossfit и кардио.</title>
     <link rel="preload" href="fonts/robotoCondensed-Bold.woff2" as="font" crossorigin="anonymous">
-      <link rel="preload" href="fonts/robotoCondensed-Regular.woff2" as="font" crossorigin="anonymous">
-      <link rel="preload" href="fonts/bebasNeue-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/robotoCondensed-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/bebasNeue-Regular.woff2" as="font" crossorigin="anonymous">
       <link href="css/style.min.css" rel="stylesheet">
   </head>
 
   <body>
-    <h1></h1>
+    <div style="display: none;">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
+    <header class="page-header">
+      <div class="page-header__wrap container">
+        <div class="page-header__logo-wrap">
+          <a class="page-header__logo">Supergym</a>
+          <a class="page-header__phone" href="tel:+78005555555">8-800-555-55-55</a>
+        </div>
+        <div class="page-header__main-part-wrap">
+          <div class="page-header__title-wrap">
+            <div class="page-header__main-part">
+              <div>
+                <p>Тренажёрный зал</p>
+                <p>Групповые занятия</p>
+                <p>Кардио-зона</p>
+              </div>
+              <div>
+                <span>Омск</span>
+                <h1>фитнес</br>центр</h1>
+              </div>
+            </div>
+            <a class="page-header__link" href="subscriptions">Купить абонемент</a>
+          </div>
+          <picture>
+              <source type="img/webp" media="(max-width: 1199px)" srcset="img/page-header_tablet@1x.webp 1x, img/page-header_tablet@2x.webp 2x">
+              <source type="img/webp" srcset="img/page-header_desktop@1x.webp 1x, img/page-header_desktop@2x.webp 2x">
+
+              <source media="(max-width: 1199px)" srcset="img/page-header_tablet@1x.png 1x, img/page-header_tablet@2x.png 2x">
+              <img src="img/page-header_desktop@1x.png" srcset="img/page-header_desktop@2x.png 2x" alt="Накаченный мужчина в футболке Супермена">
+            </picture>
+          <ul class="page-header__list">
+            <li class="page-header__item">
+              <a class="page-header__item-link" href="#">FB
+              </a>
+            </li>
+            <li class="page-header__item">
+              <a class="page-header__item-link" href="#">VK
+              </a>
+            </li>
+            <li class="page-header__item page-header__item--insta">
+              <a class="page-header__item-link" href="#">IG
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="gym container">
+        <div class="gym__description">
+          <h2>Тренажерный зал</h2>
+          <span>Просторный зал площадью 900 кв/м</span>
+          <p>Supergym - самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+          <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+        </div>
+        <div>
+          <picture>
+            <source type="img/webp" media="(max-width: 767px)" srcset="img/gym-photo_mobilet@1x.webp 1x, img/gym-photo_mobile@2x.webp 2x">
+            <source type="img/webp" media="(max-width: 1199px)" srcset="img/gym-photo_tablet@1x.webp 1x, img/gym-photo_tablet@2x.webp 2x">
+            <source type="img/webp" srcset="img/gym-photo_desktop@1x.webp 1x, img/gym-photo_desktop@2x.webp 2x">
+
+            <source media="(max-width: 767px)" srcset="img/gym-photo_mobile@1x.png 1x, img/gym-photo_mobile@2x.png 2x">
+            <source media="(max-width: 1199px)" srcset="img/gym-photo_tablet@1x.png 1x, img/gym-photo_tablet@2x.png 2x">
+            <img src="img/gym-photo_desktop@1x.png" srcset="img/gym-photo_desktop@2x.png 2x" alt="Фотография тренажёрного зала">
+          </picture>
+          <div class="gym__video">
+            <div class="gym__video-play"></div>
+            <video preload="auto" poster="img/video-saver_desktop@1x.png" width="364" height="228">
+              <object data="video.swf" type="application/x-shockwave-flash">
+                <param name="movie" value="video.swf">
+              </object>
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <section class="subscriptions">
+      </section>
+
+    </main>
   </body>
 </html>

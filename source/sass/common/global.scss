@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Roboto Condensed";
-  font-weight: normal;
-  font-style: bold;
+  font-weight: bold;
+  font-style: normal;
   font-display: swap;
   src: url("../fonts/robotoCondensed-Bold.woff2") format("woff2"), url("../fonts/robotoCondensed-Bold.woff") format("woff");
 }
@@ -33,13 +33,11 @@ body {
   height: 100%;
   margin: 0 auto;
   padding: 0;
-
   font-size: 16px;
-  line-height: 22px;
-  font-family: "Roboto Condensed", "bebasNeue", "Arial", sans-serif;
+  line-height: 24px;
+  font-family: "Roboto Condensed", "Bebas Neue", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
-
   background-color: #ffffff;
 }
 
@@ -54,31 +52,31 @@ body {
 // }
 
 .container {
-  width: 1170px;
+  max-width: 1160px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-// @media (max-width: $desktop-width) {
-//   .container {
-//     min-width: 720px;
-//     max-width: 1023px;
-//     margin: 0 auto;
-//     padding-left: 24px;
-//     padding-right: 24px;
-//   }
-// }
+@media (max-width: $desktop-width) {
+  .container {
+    min-width: 678px;
+    max-width: 1159px;
+    margin: 0 auto;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
 
-// @media (max-width: $tablet-width) {
-//   .container {
-//     min-width: 290px;
-//     max-width: 650px;
-//     margin: 0 auto;
-//     padding-left: 15px;
-//     padding-right: 15px;
-//   }
-// }
+@media (max-width: $tablet-width) {
+  .container {
+    min-width: 290px;
+    max-width: 650px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 
 img {
   max-width: 100%;
