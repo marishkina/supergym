@@ -1,3 +1,340 @@
 .subscriptions {
+  position: relative;
+  padding-top: 121px;
+  padding-bottom: 80px;
   background-color: #f8f9fc;
+
+  &::after {
+    @include pseudo;
+    bottom: -95px;
+    left: 50%;
+    width: 321px;
+    height: 384px;
+    margin-left: 471px;
+    background-image: url("../img/gym-staff.png");
+    background-repeat: no-repeat;
+    background-size: 321px 384px;
+    transform: rotate(150deg);
+  }
+}
+
+.subscriptions__wrap h2 {
+  @include bebasNeue;
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-left: -2px;
+  font-size: 49px;
+  font-weight: 600;
+  line-height: 49px;
+  color: $text-color;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.subscriptions__toggles-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 342px;
+  margin: 0 auto;
+  margin-bottom: 38px;
+  box-shadow: inset 0 -2px 0 0 rgba(120, 120, 120, 0.2);
+}
+
+.subscriptions__toggle {
+  @include roboto;
+  padding-bottom: 11px;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgba(16, 38, 84, 0.5);
+  background-color: transparent;
+  border: 2px solid transparent;
+  cursor: pointer;
+
+  &--active {
+    color: $text-color;
+    border-bottom: 2px solid #d10a42;
+  }
+
+  &:hover,
+  &:focus {
+    color: $text-color;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.subscriptions__toggle--no-js {
+  color: $text-color;
+  border-bottom: 2px solid #d10a42;
+}
+
+.subscriptions__card-block {
+  position: relative;
+  display: none;
+  z-index: 1;
+}
+
+.subscriptions__card-block--active {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.subscriptions__card-block--no-js {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.subscriptions__card-block--active .subscriptions__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 344px;
+  margin-bottom: 40px;
+  padding-top: 23px;
+  padding-bottom: 59px;
+  background-color: #ffffff;
+  border: 8px solid transparent;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    padding-bottom: 60px;
+    background: linear-gradient(#ffffff, #ffffff),
+      linear-gradient(-45deg, #003eb7, #ed0233 -150%, #003eb7 96%);
+    background-size: cover;
+    background-clip: padding-box, border-box;
+  }
+}
+
+.subscriptions__card:hover > .subscriptions__link,
+.subscriptions__card:focus > .subscriptions__link {
+  width: 206px;
+  height: 64px;
+  margin-top: 1px;
+  padding-top: 25px;
+  border: none;
+  color: #ffffff;
+  background: linear-gradient(-45deg, #003eb7, #ed0233);
+
+  &:hover,
+  &:focus {
+    background: linear-gradient(45deg, #003eb7, #ed0233);
+  }
+
+  &:active {
+    background: linear-gradient(45deg, #003eb7, #ed0233);
+    opacity: 0.7;
+  }
+}
+
+.subscriptions__card h3 {
+  @include roboto;
+  margin-bottom: 5px;
+  font-size: 26px;
+  font-weight: 600px;
+  line-height: 40px;
+  color: $text-color;
+}
+
+.subscriptions__card span {
+  @include roboto;
+  margin-bottom: 66px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #495a7d;
+}
+
+.subscriptions__card div {
+  display: flex;
+  margin-bottom: 33px;
+}
+
+.subscriptions__card p {
+  @include roboto;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 4px;
+  margin-right: 6px;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 90px;
+  color: #103aae;
+  z-index: 1;
+}
+
+.subscriptions__card .subscriptions__shadow {
+  @include pseudo;
+  @include roboto;
+  top: 130px;
+  left: 50%;
+  margin-bottom: 0;
+  margin-left: -102px;
+  font-size: 100px;
+  font-weight: bold;
+  line-height: 150px;
+  color: rgba(232, 232, 232, 0.48);
+}
+
+.subscriptions__card .subscriptions__font-size {
+  @include roboto;
+  position: relative;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 6px;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 90px;
+  color: #102654;
+  z-index: 1;
+}
+
+.subscriptions__link {
+  @include button;
+  width: 208px;
+  height: 66px;
+  padding-top: 24px;
+  color: $text-color;
+  border: 2px solid #1c3374;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    background: linear-gradient(45deg, #003eb7, #ed0233);
+    color: #ffffff;
+  }
+
+  &:active {
+    background: linear-gradient(45deg, #003eb7, #ed0233);
+    opacity: 0.7;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .subscriptions {
+    padding-top: 101px;
+    padding-bottom: 60px;
+
+    &::after {
+      bottom: -76px;
+      width: 289px;
+      height: 345px;
+      margin-left: 105px;
+      background-size: 289px 345px;
+    }
+  }
+
+  .subscriptions__wrap h2 {
+    margin-bottom: 24px;
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .subscriptions__toggles-wrap {
+    width: 332px;
+    margin-bottom: 44px;
+  }
+
+  .subscriptions__toggle {
+    padding-bottom: 12px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .subscriptions__card-block--active {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .subscriptions__card {
+    box-sizing: border-box;
+    width: 65.5%;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .subscriptions {
+    padding-top: 70px;
+    padding-bottom: 34px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .subscriptions__wrap h2 {
+    margin-bottom: 18px;
+    margin-left: 0;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 1.4px;
+  }
+
+  .subscriptions__toggles-wrap {
+    width: 290px;
+    margin-bottom: 34px;
+  }
+
+  .subscriptions__toggle {
+    padding-bottom: 12px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .subscriptions__card {
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 21px;
+    padding-bottom: 46px;
+    margin-bottom: 35px;
+  }
+
+  .subscriptions__card h3 {
+    margin-bottom: 9px;
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .subscriptions__card p {
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 48px;
+    line-height: 72px;
+  }
+
+  .subscriptions__card span {
+    margin-bottom: 45px;
+  }
+
+  .subscriptions__card .subscriptions__shadow {
+    top: 112px;
+    margin-left: -81px;
+    font-size: 80px;
+    line-height: 120px;
+  }
+
+  .subscriptions__card .subscriptions__font-size {
+    margin-left: 4px;
+    font-size: 45px;
+  }
+
+  .subscriptions__card div {
+    margin-bottom: 21px;
+  }
+
+  .subscriptions__card--active {
+    padding-bottom: 47px;
+  }
 }

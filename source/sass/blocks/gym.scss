@@ -89,7 +89,7 @@
   .gym {
     flex-direction: column;
     padding-top: 53px;
-    padding-bottom: 181px;
+    padding-bottom: 183px;
     padding-left: 45px;
     padding-right: 45px;
   }
@@ -144,6 +144,7 @@
 @media (max-width: $tablet-width) {
   .gym {
     padding-top: 21px;
+    padding-bottom: 237px;
     padding-left: 0;
     padding-right: 0;
   }
@@ -176,17 +177,18 @@
   .gym img {
     width: 320px;
     height: 313px;
+    margin-bottom: 40px;
   }
 
   .gym video {
-    top: 40px;
+    top: 0;
     width: 320px;
     margin-left: -160px;
     object-fit: fill;
   }
 
   .gym__video-play {
-    top: 86px;
+    top: 46px;
     margin-left: -35px;
   }
 }

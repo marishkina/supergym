@@ -96,66 +96,104 @@
         <a id="subscriptions" href="#"></a>
         <div class="subscriptions__wrap container">
           <h2>Абонементы</h2>
-          <button class="subscriptions__button" type="button">1 месяц</button>
-          <button class="subscriptions__button" type="button">6 месяцев</button>
-          <button class="subscriptions__button" type="button">12 месяцев</button>
-          <div class="subscriptions__card-block subscriptions__card-block--one-month">
-            <div class="subscriptions__card">
+          <div class="subscriptions__toggles-wrap">
+            <button class="subscriptions__toggle subscriptions__toggle--one-month subscriptions__toggle--active" type="button">1 месяц</button>
+            <button class="subscriptions__toggle subscriptions__toggle--six-months subscriptions__toggle--no-js" type="button">6 месяцев</button>
+            <button class="subscriptions__toggle subscriptions__toggle--twelve-months subscriptions__toggle--no-js" type="button">12 месяцев</button>
+          </div>
+          <div class="subscriptions__card-block subscriptions__card-block--one-month subscriptions__card-block--active">
+            <div class="subscriptions__card" tabindex="0">
               <h3>С тренером</h3>
               <span>12 занятий</span>
-              <p>5000 ₽</p>
+              <div>
+                <p>5000</p>
+                <span class="subscriptions__shadow">5000</span>
+                <span class="subscriptions__font-size">&#8381;</span>
+                </div>
               <a class="subscriptions__link" href="#">Купить абонемент</a>
             </div>
-            <div class="subscriptions__card">
+            <div class="subscriptions__card" tabindex="0">
               <h3>Дневной</h3>
               <span>с 8:00 до 17:00</span>
-              <p>1700 ₽</p>
+              <div>
+                <p>1700</p>
+                <span class="subscriptions__shadow">1700</span>
+                <span class="subscriptions__font-size">&#8381;</span>
+              </div>
               <a class="subscriptions__link" href="#">Купить абонемент</a>
             </div>
-            <div class="subscriptions__card">
+            <div class="subscriptions__card" tabindex="0">
               <h3>Полный день</h3>
               <span>с 8:00 до 22:00</span>
-              <p>2700 ₽</p>
+              <div>
+                <p>2700</p>
+                <span class="subscriptions__shadow">2700</span>
+                <span class="subscriptions__font-size">&#8381;</span>
+                </div>
               <a class="subscriptions__link" href="#">Купить абонемент</a>
             </div>
           </div>
-          <div class="subscriptions__card-block subscriptions__card-block--six-months">
-            <div class="subscriptions__card">
+          <div class="subscriptions__card-block subscriptions__card-block--six-months subscriptions__card-block--no-js">
+            <div class="subscriptions__card" tabindex="0">
               <h3>С тренером</h3>
-              <span>12 занятий</span>
-              <p>25000 ₽</p>
+              <span>72 занятия</span>
+              <div>
+                <p>25000</p>
+                <span class="subscriptions__shadow">25000</span>
+                <span class="subscriptions__font-size">&#8381;</span>
+              </div>
               <a class="subscriptions__link" href="#">Купить абонемент</a>
             </div>
-            <div class="subscriptions__card">
+            <div class="subscriptions__card" tabindex="0">
               <h3>Дневной</h3>
-              <span>с 8:00 до 17:00</span>
-              <p>9000 ₽</p>
+              <span>с 8:00 до 27:00</span>
+              <div>
+                <p>9000</p>
+                <span class="subscriptions__shadow">9000</span>
+                <span class="subscriptions__font-size">&#8381;</span>
+              </div>
               <a class="subscriptions__link" href="#">Купить абонемент</a>
             </div>
-            <div class="subscriptions__card">
+            <div class="subscriptions__card" tabindex="0">
               <h3>Полный день</h3>
               <span>с 8:00 до 22:00</span>
-              <p>15000 ₽</p>
+              <div>
+                <p>15000</p>
+                <span class="subscriptions__shadow">15000</span>
+                <span class="subscriptions__font-size">&#8381;</span>
+              </div>
               <a class="subscriptions__link" href="#">Купить абонемент</a>
             </div>
           </div>
-          <div class="subscriptions__card-block subscriptions__card-block--twelve-months">
-            <div class="subscriptions__card">
+          <div class="subscriptions__card-block subscriptions__card-block--twelve-months subscriptions__card-block--no-js">
+            <div class="subscriptions__card" tabindex="0">
               <h3>С тренером</h3>
-              <span>12 занятий</span>
-              <p>40000 ₽</p>
+              <span>144 занятия</span>
+              <div>
+                <p>4000</p>
+                <span class="subscriptions__shadow">4000</span>
+                <span class="subscriptions__font-size">&#8381;</span>
+              </div>
               <a class="subscriptions__link" href="#">Купить абонемент</a>
             </div>
-            <div class="subscriptions__card">
+            <div class="subscriptions__card" tabindex="0">
               <h3>Дневной</h3>
               <span>с 8:00 до 17:00</span>
-              <p>15000 ₽</p>
+              <div>
+                <p>15000</p>
+                <span class="subscriptions__shadow">15000</span>
+                <span class="subscriptions__font-size">&#8381;</span>
+              </div>
               <a class="subscriptions__link" href="#">Купить абонемент</a>
             </div>
-            <div class="subscriptions__card">
+            <div class="subscriptions__card" tabindex="0">
               <h3>Полный день</h3>
               <span>с 8:00 до 22:00</span>
-              <p>25000 ₽</p>
+              <div>
+                <p>25000</p>
+                <span class="subscriptions__shadow">25000</span>
+                <span class="subscriptions__font-size">&#8381;</span>
+              </div>
               <a class="subscriptions__link" href="#">Купить абонемент</a>
             </div>
           </div>
@@ -163,21 +201,30 @@
       </section>
 
       <section class="promo container">
-        <div class="promo__date-wrap">
-          <h2>Super Games</h2>
-          <div class="promo__date">
-            <h3>Дата</h3>
-            <time>7 Марта 2019</time>
+        <div class="promo__wrap">
+          <div class="promo__date-wrap">
+            <h2>Super Games</h2>
+            <div class="promo__time-wrap">
+              <div class="promo__date">
+                <h3>Дата</h3>
+                <time>7</time>
+                <span class="promo__date-span">Марта</br>2019</span>
+              </div>
+              <div class="promo__date promo__date--line-width">
+                <h3>Время</h3>
+                <time>12:00</time>
+              </div>
+            </div>
           </div>
-          <div class="promo__date">
-            <h3>Время</h3>
-            <time>12:00</time>
-          </div>
+          <p>Ежегодные соревнования по CrossFit</p>
+          <a class="promo__link" href="#">Заполнить заявку</a>
         </div>
-        <p>Ежегодные соревнования по Crossfit</p>
-        <a class="promo__link" href="#">Заполнить заявку</a>
+        <div class="promo__img"></div>
       </section>
 
     </main>
+
+    <script defer src="js/subscriptions.js"></script>
+
   </body>
 </html>
