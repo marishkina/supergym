@@ -93,21 +93,22 @@
 }
 
 .subscriptions__card-block--active .subscriptions__card {
+  box-sizing: border-box;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 344px;
+  width: 31.2%;
   margin-bottom: 40px;
-  padding-top: 23px;
-  padding-bottom: 59px;
+  padding-top: 24px;
+  padding-bottom: 60px;
   background-color: #ffffff;
-  border: 8px solid transparent;
+  border: 7px solid transparent;
   outline: none;
 
   &:hover,
   &:focus {
-    padding-bottom: 60px;
+    margin-bottom: 41px;
     background: linear-gradient(#ffffff, #ffffff),
       linear-gradient(-45deg, #003eb7, #ed0233 -150%, #003eb7 96%);
     background-size: cover;
@@ -211,6 +212,7 @@
 
   &:hover,
   &:focus {
+    border: 2px solid red;
     background: linear-gradient(45deg, #003eb7, #ed0233);
     color: #ffffff;
   }
@@ -243,7 +245,7 @@
 
   .subscriptions__toggles-wrap {
     width: 332px;
-    margin-bottom: 44px;
+    margin-bottom: 45px;
   }
 
   .subscriptions__toggle {
@@ -258,9 +260,8 @@
     align-items: center;
   }
 
-  .subscriptions__card {
-    box-sizing: border-box;
-    width: 65.5%;
+  .subscriptions__card-block--active .subscriptions__card {
+    width: 65%;
   }
 }
 
@@ -293,12 +294,16 @@
     line-height: 24px;
   }
 
-  .subscriptions__card {
-    box-sizing: border-box;
+  .subscriptions__card-block--active .subscriptions__card {
     width: 100%;
     padding-top: 21px;
     padding-bottom: 46px;
-    margin-bottom: 35px;
+    margin-bottom: 37px;
+
+    &:hover,
+    &:focus {
+      margin-bottom: 38px;
+    }
   }
 
   .subscriptions__card h3 {
