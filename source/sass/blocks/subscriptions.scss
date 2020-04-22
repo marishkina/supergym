@@ -226,13 +226,13 @@
 @media (max-width: $desktop-width) {
   .subscriptions {
     padding-top: 101px;
-    padding-bottom: 60px;
+    padding-bottom: 59px;
 
     &::after {
-      bottom: -76px;
+      bottom: -75px;
       width: 289px;
       height: 345px;
-      margin-left: 105px;
+      margin-left: 104px;
       background-size: 289px 345px;
     }
   }

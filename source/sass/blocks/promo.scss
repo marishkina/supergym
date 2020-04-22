@@ -94,9 +94,20 @@
   color: #ffffff;
 }
 
+.promo__day {
+  @include roboto;
+  margin-right: 3px;
+  font-size: 39px;
+  font-weight: 500;
+  line-height: 60px;
+  letter-spacing: 1.4px;
+  color: #ffffff;
+}
+
 .promo__date-span {
   @include roboto;
   display: inline-block;
+  width: 37px;
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
@@ -188,6 +199,13 @@
   }
 
   .promo__date time {
+    margin-right: -1px;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.5px;
+  }
+
+  .promo__day {
     margin-right: -1px;
     font-size: 24px;
     line-height: 36px;

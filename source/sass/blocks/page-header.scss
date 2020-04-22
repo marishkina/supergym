@@ -92,6 +92,7 @@
 
 .page-header__main-part h1 {
   @include bebasNeue;
+  width: 297px;
   margin-top: 0;
   margin-bottom: 0;
   margin-left: -31px;
@@ -216,6 +217,7 @@
   }
 
   .page-header__main-part h1 {
+    width: 235px;
     margin-left: -25px;
     font-size: 86px;
     line-height: 86px;
@@ -274,6 +276,7 @@
   }
 
   .page-header__main-part h1 {
+    width: 213px;
     margin-left: -34px;
     font-size: 78px;
     line-height: 78px;

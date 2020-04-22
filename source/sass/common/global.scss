@@ -43,13 +43,13 @@ body {
 
 .main {
   flex: 1 0 auto;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
-// .footer {
-//   flex-shrink: 0;
-//   overflow: hidden;
-// }
+.footer {
+  flex-shrink: 0;
+  overflow-x: hidden;
+}
 
 .container {
   max-width: 1160px;
