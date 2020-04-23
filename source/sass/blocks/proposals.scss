@@ -80,12 +80,15 @@
   text-decoration: none;
   background: linear-gradient(#ffffff, #ffffff) no-repeat;
   background-size: 100% 1px;
-  background-position: -1px 17px;
+  background-position: -1px 16px;
   cursor: pointer;
 
   &:hover,
   &:focus {
     color: $text-color;
+    background: linear-gradient($text-color, $text-color) no-repeat;
+    background-size: 100% 1px;
+    background-position: -1px 16px;
   }
 
   &:active {
@@ -93,28 +96,11 @@
   }
 }
 
-.proposals__img {
+.proposals img {
+  display: block;
   width: 280px;
   height: 462px;
   background-color: #4169da;
-  background-size: 280px 462px;
-}
-
-.no-webp .proposals__img,
-.no-js .proposals__img {
-  background-image: url("../img/proposal_desktop@1x.png");
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/proposal_desktop@2x.png");
-  }
-}
-
-.webp .proposals__img {
-  background-image: url("../img/proposal_desktop@1x.webp");
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/proposal_desktop@2x.webp");
-  }
 }
 
 .proposals__start {
@@ -181,6 +167,9 @@
   &:hover,
   &:focus {
     color: #003eb7;
+    background: linear-gradient(#003eb7, #003eb7) no-repeat;
+    background-size: 100% 1px;
+    background-position: 0 15px;
   }
 
   &:active {
@@ -207,26 +196,8 @@
     align-items: center;
   }
 
-  .proposals__img {
+  .proposals img {
     width: 399px;
-    background-size: 399px 462px;
-  }
-
-  .no-webp .proposals__img,
-  .no-js .proposals__img {
-    background-image: url("../img/proposal_tablet@1x.png");
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/proposal_tablet@2x.png");
-    }
-  }
-
-  .webp .proposals__img {
-    background-image: url("../img/proposal_tablet@1x.webp");
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/proposal_tablet@2x.webp");
-    }
   }
 
   .proposals__year {
@@ -297,28 +268,10 @@
     text-align: center;
   }
 
-  .proposals__img {
+  .proposals img {
     width: 290px;
     height: 299px;
     margin: 0 auto;
-    background-size: 290px 299px;
-  }
-
-  .no-webp .proposals__img,
-  .no-js .proposals__img {
-    background-image: url("../img/proposal_mobile@1x.png");
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/proposal_mobile@2x.png");
-    }
-  }
-
-  .webp .proposals__img {
-    background-image: url("../img/proposal_mobile@1x.webp");
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/proposal_mobile@2x.webp");
-    }
   }
 
   .proposals__start {
@@ -327,7 +280,7 @@
   }
 
   .proposals__sail {
-    width: 96.9%;
+    width: 100%;
     margin-bottom: 30px;
     margin-right: 0;
     padding-top: 34px;
