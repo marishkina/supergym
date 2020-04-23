@@ -119,34 +119,15 @@
   padding-bottom: 40px;
   box-sizing: border-box;
   box-shadow: 0 10px 40px rgba(28, 51, 116, 1);
-
-  &::before {
-    @include pseudo;
-    top: 62px;
-    left: 50%;
-    width: 80px;
-    height: 80px;
-    margin-left: -218px;
-    background-size: 80px 80px;
-    background-repeat: no-repeat;
-  }
 }
 
-.no-webp .reviews__card::before,
-.no-js .reviews__card::before {
-  background-image: url("../img/review-photo@1x.png");
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/review-photo@2x.png");
-  }
-}
-
-.webp .reviews__card::before {
-  background-image: url("../img/review-photo@1x.webp");
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/review-photo@2x.webp");
-  }
+.reviews__card img {
+  @include pseudo;
+  top: 62px;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  margin-left: -218px;
 }
 
 @media (max-width: $desktop-width) {
@@ -219,31 +200,13 @@
     padding-top: 47px;
     padding-left: 22px;
     padding-right: 22px;
-
-    &::before {
-      top: 40px;
-      width: 68px;
-      height: 68px;
-      margin-left: -72px;
-      background-size: 68px 68px;
-    }
   }
 
-  .no-webp .reviews__card::before,
-  .no-js .reviews__card::before {
-    background-image: url("../img/review-photo_mobile@1x.png");
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/review-photo_mobile@2x.png");
-    }
-  }
-
-  .webp .reviews__card::before {
-    background-image: url("../img/review-photo_mobile@1x.webp");
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/review-photo_mobile@2x.webp");
-    }
+  .reviews__card img {
+    top: 40px;
+    width: 68px;
+    height: 68px;
+    margin-left: -72px;
   }
 
   .reviews__card h3 {

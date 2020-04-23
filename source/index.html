@@ -88,11 +88,11 @@
           <div class="gym__video">
             <div class="gym__video-play"></div>
             <video preload="auto" poster="img/video-saver_desktop@1x.png" width="364" height="228">
-              <source src="video/duel.ogv" type="video/ogg">
+              <!-- <source src="video/duel.ogv" type="video/ogg">
               <source src="video/duel.mp4" type="video/mp4">
               <source src="video/duel.webm" type="video/webm">
-              Тег video не поддерживается вашим браузером.
-              <a href="video/duel.mp4">Скачайте видео</a>
+              Тег video не поддерживается вашим браузером. -->
+              <!-- <a href="video/duel.mp4">Скачайте видео</a> -->
             </video>
           </div>
         </div>
@@ -245,7 +245,7 @@
           <ul class="slider__slide-line">
             <li class="slider__slide">
               <picture>
-                <source media="(max-width: 767px)" data-srcset="img/coach-1_mobilet@1x.webp 1x, img/coach-1_mobile@2x.webp 2x">
+                <source media="(max-width: 767px)" data-srcset="img/coach-1_mobile@1x.webp 1x, img/coach-1_mobile@2x.webp 2x">
                 <source media="(max-width: 1199px)" data-srcset="img/coach-1_tablet@1x.webp 1x, img/coach-1_tablet@2x.webp 2x">
                 <source type="img/webp" data-srcset="img/coach-1_desktop@1x.webp 1x, img/coach-1_desktop@2x.webp 2x">
 
@@ -353,7 +353,7 @@
             </li>
             <li class="slider__slide">
               <picture>
-                <source media="(max-width: 767px)" data-srcset="img/coach-1_mobilet@1x.webp 1x, img/coach-1_mobile@2x.webp 2x">
+                <source media="(max-width: 767px)" data-srcset="img/coach-1_mobile@1x.webp 1x, img/coach-1_mobile@2x.webp 2x">
                 <source media="(max-width: 1199px)" data-srcset="img/coach-1_tablet@1x.webp 1x, img/coach-1_tablet@2x.webp 2x">
                 <source type="img/webp" data-srcset="img/coach-1_desktop@1x.webp 1x, img/coach-1_desktop@2x.webp 2x">
 
@@ -563,12 +563,26 @@
           <ul class="reviews__list">
             <li class="reviews__item">
               <div class="reviews__card">
+                <picture>
+                  <source media="(max-width: 767px)" data-srcset="img/review-photo_mobile@1x.webp 1x, img/review-photo_mobile@2x.webp 2x">
+                  <source type="img/webp" data-srcset="img/review-photo@1x.webp 1x, img/review-photo@2x.webp 2x">
+
+                  <source media="(max-width: 767px)" data-srcset="img/review-photo_mobile@1x.png 1x, img/review-photo_mobile@2x.png 2x">
+                  <img class="lazyload" data-src="img/review-photo@1x.png" data-srcset="img/review-photo@2x.png 2x" alt="Фотография Анны Орловой">
+                </picture>
                 <h3>Анна Орлова</h3>
                 <p>«Хожу в SyperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
               </div>
             </li>
             <li class="reviews__item">
               <div class="reviews__card">
+                <picture>
+                  <source media="(max-width: 767px)" data-srcset="img/review-photo_mobile@1x.webp 1x, img/review-photo_mobile@2x.webp 2x">
+                  <source type="img/webp" data-srcset="img/review-photo@1x.webp 1x, img/review-photo@2x.webp 2x">
+
+                  <source media="(max-width: 767px)" data-srcset="img/review-photo_mobile@1x.png 1x, img/review-photo_mobile@2x.png 2x">
+                  <img class="lazyload" data-src="img/review-photo@1x.png" data-srcset="img/review-photo@2x.png 2x" alt="Фотография Кати Самсоновой">
+                </picture>
                 <h3>Катя Самсонова</h3>
                 <p>«SyperClub - атмосферное место, где просыпается желание работать над телом, повышается тонус и настроение. Много инвентаря, современные тренажеры для продвинутых спортсменов и начинающих.
                 Отдельная зона для Crossfit и кардио, групповые занятия.
