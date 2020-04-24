@@ -116,12 +116,11 @@
   padding-left: 28px;
   padding-right: 20px;
   margin-bottom: 40px;
-  border: 7px solid transparent;
+  border: 7px solid;
+  border-image-slice: 1;
+  border-width: 7px;
+  border-image-source: linear-gradient(to top, #003eb7, #ed0233);
   box-sizing: border-box;
-  background: linear-gradient(#ffffff, #ffffff),
-    linear-gradient(-45deg, #003eb7, #ed0233 -150%, #003eb7 96%);
-  background-size: cover;
-  background-clip: padding-box, border-box;
 
   &:last-child {
     margin-bottom: 0;

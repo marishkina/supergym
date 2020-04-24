@@ -117,10 +117,9 @@
   &:hover,
   &:focus {
     margin-bottom: 41px;
-    background: linear-gradient(#ffffff, #ffffff),
-      linear-gradient(-45deg, #003eb7, #ed0233 -150%, #003eb7 96%);
-    background-size: cover;
-    background-clip: padding-box, border-box;
+    border-image-slice: 1;
+    border-width: 7px;
+    border-image-source: linear-gradient(to top, #003eb7, #ed0233);
   }
 }
 
@@ -182,11 +181,13 @@
   @include roboto;
   top: 130px;
   left: 50%;
+  width: 300px;
   margin-bottom: 0;
-  margin-left: -102px;
+  margin-left: -150px;
   font-size: 100px;
   font-weight: bold;
   line-height: 150px;
+  text-align: center;
   color: rgba(232, 232, 232, 0.48);
 }
 

@@ -51,9 +51,11 @@
           </div>
           <picture>
               <source media="(max-width: 1199px)" data-srcset="img/page-header_tablet@1x.webp 1x, img/page-header_tablet@2x.webp 2x">
-              <source type="img/webp" data-srcset="img/page-header_desktop@1x.webp 1x, img/page-header_desktop@2x.webp 2x">
+              <source type="image/webp" data-srcset="img/page-header_desktop@1x.webp 1x, img/page-header_desktop@2x.webp 2x">
 
+              <!-- 1х: 324px x 390px; 2x: 648px x 780px; -->
               <source media="(max-width: 1199px)" data-srcset="img/page-header_tablet@1x.png 1x, img/page-header_tablet@2x.png 2x">
+              <!-- 1х: 500px x 556px; 2x: 1000px x 1112px; -->
               <img class="lazyload" data-src="img/page-header_desktop@1x.png" data-srcset="img/page-header_desktop@2x.png 2x" alt="Накаченный мужчина в футболке Супермена">
             </picture>
           <ul class="page-header__list">
@@ -76,7 +78,7 @@
 
     <main class="main">
       <section class="gym container">
-        <a class="visually-hidden" id="services" href="#">Услуги</a>
+        <a id="services" href="#"></a>
         <div class="gym__description">
           <h2>Тренажерный зал</h2>
           <span>Просторный зал площадью 900 кв/м</span>
@@ -87,27 +89,29 @@
           <picture>
             <source media="(max-width: 767px)" data-srcset="img/gym-photo_mobile@1x.webp 1x, img/gym-photo_mobile@2x.webp 2x">
             <source media="(max-width: 1199px)" data-srcset="img/gym-photo_tablet@1x.webp 1x, img/gym-photo_tablet@2x.webp 2x">
-            <source type="img/webp" data-srcset="img/gym-photo_desktop@1x.webp 1x, img/gym-photo_desktop@2x.webp 2x">
+            <source type="image/webp" data-srcset="img/gym-photo_desktop@1x.webp 1x, img/gym-photo_desktop@2x.webp 2x">
 
+            <!-- 1х: 320px x 313px; 2x: 640px x 626px; -->
             <source media="(max-width: 767px)" data-srcset="img/gym-photo_mobile@1x.png 1x, img/gym-photo_mobile@2x.png 2x">
+            <!-- 1х: 678px x 345px; 2x: 1356px x 690px; -->
             <source media="(max-width: 1199px)" data-srcset="img/gym-photo_tablet@1x.png 1x, img/gym-photo_tablet@2x.png 2x">
+            <!-- 1х: 660px x 401px; 2x: 1320px x 802px; -->
             <img class="lazyload" data-src="img/gym-photo_desktop@1x.png" data-srcset="img/gym-photo_desktop@2x.png 2x" alt="Фотография тренажёрного зала">
           </picture>
           <div class="gym__video">
             <div class="gym__video-play"></div>
-            <video preload="auto" poster="img/video-saver_desktop@1x.png" width="364" height="228">
-              <!-- <source src="video/duel.ogv" type="video/ogg">
-              <source src="video/duel.mp4" type="video/mp4">
-              <source src="video/duel.webm" type="video/webm">
-              Тег video не поддерживается вашим браузером. -->
-              <!-- <a href="video/duel.mp4">Скачайте видео</a> -->
+            <div class="gym__video-poster">
+              <div class="gym__video-img"></div>
+              <div class="gym__video-shadow"></div>
+            </div>
+            <video preload="auto" width="364" height="228">
             </video>
           </div>
         </div>
       </section>
 
       <section class="subscriptions">
-        <a class="visually-hidden" id="subscriptions" href="#">Абонементы</a>
+        <a id="subscriptions" href="#"></a>
         <div class="subscriptions__wrap container">
           <h2>Абонементы</h2>
           <div class="subscriptions__toggles-wrap">
@@ -236,29 +240,33 @@
         <picture>
           <source media="(max-width: 767px)" data-srcset="img/promo_mobile@1x.webp 1x, img/promo_mobile@2x.webp 2x">
           <source media="(max-width: 1199px)" data-srcset="img/promo_tablet@1x.webp 1x, img/promo_tablet@2x.webp 2x">
-          <source type="img/webp" data-srcset="img/promo_desktop@1x.webp 1x, img/promo_desktop@2x.webp 2x">
+          <source type="image/webp" data-srcset="img/promo_desktop@1x.webp 1x, img/promo_desktop@2x.webp 2x">
 
+          <!-- 1х: 280px x 462px; 2x: 560px x 924px; -->
           <source media="(max-width: 767px)" data-srcset="img/promo_mobile@1x.png 1x, img/promo_mobile@2x.png 2x">
+          <!-- 1х: 386px x 292px; 2x: 772px x 582px; -->
           <source media="(max-width: 1199px)" data-srcset="img/promo_tablet@1x.png 1x, img/promo_tablet@2x.png 2x">
+          <!-- 1х: 660px x 500px; 2x: 1320px x 1000px; -->
           <img class="lazyload" data-src="img/promo_desktop@1x.png" data-srcset="img/promo_desktop@2x.png 2x" alt="Фотография cпортсмена">
         </picture>
       </section>
 
       <section class="slider container">
-        <a class="visually-hidden" id="trainers" href="#">Тренера</a>
+        <a id="trainers" href="#"></a>
         <h2>Тренеры</h2>
-        <button class="slider__controler slider__controler--prev" type="button">
-          <span class="visually-hidden">Назад</span></button>
-        <div class="slider__wrap">
-          <ul class="slider__slide-line">
-            <li class="slider__slide">
+        <div class="slider__container">
+          <div class="slider__wrap">
+            <div class="slider__slide">
               <picture>
                 <source media="(max-width: 767px)" data-srcset="img/coach-1_mobile@1x.webp 1x, img/coach-1_mobile@2x.webp 2x">
                 <source media="(max-width: 1199px)" data-srcset="img/coach-1_tablet@1x.webp 1x, img/coach-1_tablet@2x.webp 2x">
-                <source type="img/webp" data-srcset="img/coach-1_desktop@1x.webp 1x, img/coach-1_desktop@2x.webp 2x">
+                <source type="image/webp" data-srcset="img/coach-1_desktop@1x.webp 1x, img/coach-1_desktop@2x.webp 2x">
 
+                <!-- 1х: 226px x 274px; 2x: 452px x 548px; -->
                 <source media="(max-width: 767px)" data-srcset="img/coach-1_mobile@1x.png 1x, img/coach-1_mobile@2x.png 2x">
+                <!-- 1х: 268px x 303px; 2x: 536px x 588px; -->
                 <source media="(max-width: 1199px)" data-srcset="img/coach-1_tablet@1x.png 1x, img/coach-1_tablet@2x.png 2x">
+                <!-- 1х: 260px x 294px; 2x: 520px x 588px; -->
                 <img class="lazyload" data-src="img/coach-1_desktop@1x.png" data-srcset="img/coach-1_desktop@2x.png 2x" alt="Фотография нашего тренера Анны Павловой">
               </picture>
               <h3>Анна Павлова</h3>
@@ -277,19 +285,22 @@
                   </li>
                 </ul>
               </div>
-            </li>
-            <li class="slider__slide slider__slide--coach-2">
+            </div>
+            <div class="slider__slide">
               <picture>
                 <source media="(max-width: 767px)" data-srcset="img/coach-2_mobile@1x.webp 1x, img/coach-2_mobile@2x.webp 2x">
                 <source media="(max-width: 1199px)" data-srcset="img/coach-2_tablet@1x.wepb 1x, img/coach-2_tablet@2x.webp 2x">
-                <source type="img/webp" data-srcset="img/coach-2_desktop@1x.webp 1x, img/coach-2_desktop@2x.webp 2x">
+                <source type="image/webp" data-srcset="img/coach-2_desktop@1x.webp 1x, img/coach-2_desktop@2x.webp 2x">
 
+                <!-- 1х: 226px x 274px; 2x: 452px x 548px; -->
                 <source media="(max-width: 767px)" data-srcset="img/coach-2_mobile@1x.png 1x, img/coach-2_mobile@2x.png 2x">
+                <!-- 1х: 268px x 303px; 2x: 536px x 588px; -->
                 <source media="(max-width: 1199px)" data-srcset="img/coach-2_tablet@1x.png 1x, img/coach-2_tablet@2x.png 2x">
+                <!-- 1х: 260px x 294px; 2x: 520px x 588px; -->
                 <img class="lazyload" data-src="img/coach-2_desktop@1x.png" data-srcset="img/coach-2_desktop@2x.png 2x" alt="Фотография нашего тренера Алексея Лаврова">
               </picture>
               <h3>Алексей Лавров</h3>
-              <div class="slider__slide-info slider__slide-info--coach-2">
+              <div class="slider__slide-info">
                 <h3>Алексей Лавров</h3>
                 <span>CrossFit</span>
                 <ul class="slider__slide-list">
@@ -304,19 +315,22 @@
                   </li>
                 </ul>
               </div>
-            </li>
-            <li class="slider__slide slider__slide--coach-3">
+            </div>
+            <div class="slider__slide">
               <picture>
                 <source media="(max-width: 767px)" data-srcset="img/coach-3_mobile@1x.webp 1x, img/coach-3_mobile@2x.webp 2x">
                 <source media="(max-width: 1199px)" data-srcset="img/coach-3_tablet@1x.webp 1x, img/coach-3_tablet@2x.webp 2x">
-                <source type="img/webp" data-srcset="img/coach-3_desktop@1x.webp 1x, img/coach-3_desktop@2x.webp 2x">
+                <source type="image/webp" data-srcset="img/coach-3_desktop@1x.webp 1x, img/coach-3_desktop@2x.webp 2x">
 
+                <!-- 1х: 226px x 274px; 2x: 452px x 548px; -->
                 <source media="(max-width: 767px)" data-srcset="img/coach-3_mobile@1x.png 1x, img/coach-3_mobile@2x.png 2x">
+                <!-- 1х: 268px x 303px; 2x: 536px x 588px; -->
                 <source media="(max-width: 1199px)" data-srcset="img/coach-3_tablet@1x.png 1x, img/coach-3_tablet@2x.png 2x">
+                <!-- 1х: 260px x 294px; 2x: 520px x 588px; -->
                 <img class="lazyload" data-src="img/coach-3_desktop@1x.png" data-srcset="img/coach-3_desktop@2x.png 2x" alt="Фотография нашего тренера Александра Пашкова">
               </picture>
               <h3>Александр Пашков</h3>
-              <div class="slider__slide-info slider__slide-info--coach-3">
+              <div class="slider__slide-info">
                 <h3>Александр Пашков</h3>
                 <span>CrossFit</span>
                 <ul class="slider__slide-list">
@@ -331,19 +345,22 @@
                   </li>
                 </ul>
               </div>
-            </li>
-            <li class="slider__slide slider__slide--coach-4">
+            </div>
+            <div class="slider__slide">
               <picture>
                 <source media="(max-width: 767px)" data-srcset="img/coach-4_mobile@1x.wepb 1x, img/coach-4_mobile@2x.webp 2x">
                 <source media="(max-width: 1199px)" data-srcset="img/coach-4_tablet@1x.wepb 1x, img/coach-4_tablet@2x.webp 2x">
-                <source type="img/webp" data-srcset="img/coach-4_desktop@1x.webp 1x, img/coach-4_desktop@2x.webp 2x">
+                <source type="image/webp" data-srcset="img/coach-4_desktop@1x.webp 1x, img/coach-4_desktop@2x.webp 2x">
 
+                <!-- 1х: 226px x 274px; 2x: 452px x 548px; -->
                 <source media="(max-width: 767px)" data-srcset="img/coach-4_mobile@1x.png 1x, img/coach-4_mobile@2x.png 2x">
+                <!-- 1х: 268px x 303px; 2x: 536px x 588px; -->
                 <source media="(max-width: 1199px)" data-srcset="img/coach-4_tablet@1x.png 1x, img/coach-4_tablet@2x.png 2x">
+                <!-- 1х: 260px x 294px; 2x: 520px x 588px; -->
                 <img class="lazyload" data-src="img/coach-4_desktop@1x.png" data-srcset="img/coach-4_desktop@1x.png 2x" alt="Фотография нашего тренера Марии Кетовой">
               </picture>
               <h3>Мария Кетова</h3>
-              <div class="slider__slide-info slider__slide-info--coach-4">
+              <div class="slider__slide-info">
                 <h3>Мария Кетова</h3>
                 <span>CrossFit</span>
                 <ul class="slider__slide-list">
@@ -358,15 +375,18 @@
                   </li>
                 </ul>
               </div>
-            </li>
-            <li class="slider__slide">
+            </div>
+            <div class="slider__slide">
               <picture>
                 <source media="(max-width: 767px)" data-srcset="img/coach-1_mobile@1x.webp 1x, img/coach-1_mobile@2x.webp 2x">
                 <source media="(max-width: 1199px)" data-srcset="img/coach-1_tablet@1x.webp 1x, img/coach-1_tablet@2x.webp 2x">
-                <source type="img/webp" data-srcset="img/coach-1_desktop@1x.webp 1x, img/coach-1_desktop@2x.webp 2x">
+                <source type="image/webp" data-srcset="img/coach-1_desktop@1x.webp 1x, img/coach-1_desktop@2x.webp 2x">
 
+                <!-- 1х: 226px x 274px; 2x: 452px x 548px; -->
                 <source media="(max-width: 767px)" data-srcset="img/coach-1_mobile@1x.png 1x, img/coach-1_mobile@2x.png 2x">
+                <!-- 1х: 268px x 303px; 2x: 536px x 588px; -->
                 <source media="(max-width: 1199px)" data-srcset="img/coach-1_tablet@1x.png 1x, img/coach-1_tablet@2x.png 2x">
+                <!-- 1х: 260px x 294px; 2x: 520px x 588px; -->
                 <img class="lazyload" data-src="img/coach-1_desktop@1x.png" data-srcset="img/coach-1_desktop@2x.png 2x" alt="Фотография нашего тренера Анны Павловой">
               </picture>
               <h3>Анна Павлова</h3>
@@ -385,19 +405,22 @@
                   </li>
                 </ul>
               </div>
-            </li>
-            <li class="slider__slide">
+            </div>
+            <div class="slider__slide">
               <picture>
                 <source media="(max-width: 767px)" data-srcset="img/coach-2_mobile@1x.webp 1x, img/coach-2_mobile@2x.webp 2x">
                 <source media="(max-width: 1199px)" data-srcset="img/coach-2_tablet@1x.wepb 1x, img/coach-2_tablet@2x.webp 2x">
-                <source type="img/webp" data-srcset="img/coach-2_desktop@1x.webp 1x, img/coach-2_desktop@2x.webp 2x">
+                <source type="image/webp" data-srcset="img/coach-2_desktop@1x.webp 1x, img/coach-2_desktop@2x.webp 2x">
 
+                <!-- 1х: 226px x 274px; 2x: 452px x 548px; -->
                 <source media="(max-width: 767px)" data-srcset="img/coach-2_mobile@1x.png 1x, img/coach-2_mobile@2x.png 2x">
+                <!-- 1х: 268px x 303px; 2x: 536px x 588px; -->
                 <source media="(max-width: 1199px)" data-srcset="img/coach-2_tablet@1x.png 1x, img/coach-2_tablet@2x.png 2x">
+                <!-- 1х: 260px x 294px; 2x: 520px x 588px; -->
                 <img class="lazyload" data-src="img/coach-2_desktop@1x.png" data-srcset="img/coach-2_desktop@2x.png 2x" alt="Фотография нашего тренера Алексея Лаврова">
               </picture>
               <h3>Алексей Лавров</h3>
-              <div class="slider__slide-info slider__slide-info--coach-2">
+              <div class="slider__slide-info">
                 <h3>Алексей Лавров</h3>
                 <span>CrossFit</span>
                 <ul class="slider__slide-list">
@@ -412,19 +435,22 @@
                   </li>
                 </ul>
               </div>
-            </li>
-            <li class="slider__slide">
+            </div>
+            <div class="slider__slide">
               <picture>
                 <source media="(max-width: 767px)" data-srcset="img/coach-3_mobile@1x.webp 1x, img/coach-3_mobile@2x.webp 2x">
                 <source media="(max-width: 1199px)" data-srcset="img/coach-3_tablet@1x.webp 1x, img/coach-3_tablet@2x.webp 2x">
-                <source type="img/webp" data-srcset="img/coach-3_desktop@1x.webp 1x, img/coach-3_desktop@2x.webp 2x">
+                <source type="image/webp" data-srcset="img/coach-3_desktop@1x.webp 1x, img/coach-3_desktop@2x.webp 2x">
 
+                <!-- 1х: 226px x 274px; 2x: 452px x 548px; -->
                 <source media="(max-width: 767px)" data-srcset="img/coach-3_mobile@1x.png 1x, img/coach-3_mobile@2x.png 2x">
+                <!-- 1х: 268px x 303px; 2x: 536px x 588px; -->
                 <source media="(max-width: 1199px)" data-srcset="img/coach-3_tablet@1x.png 1x, img/coach-3_tablet@2x.png 2x">
+                <!-- 1х: 260px x 294px; 2x: 520px x 588px; -->
                 <img class="lazyload" data-src="img/coach-3_desktop@1x.png" data-srcset="img/coach-3_desktop@2x.png 2x" alt="Фотография нашего тренера Александра Пашкова">
               </picture>
               <h3>Александр Пашков</h3>
-              <div class="slider__slide-info slider__slide-info--coach-3">
+              <div class="slider__slide-info">
                 <h3>Александр Пашков</h3>
                 <span>CrossFit</span>
                 <ul class="slider__slide-list">
@@ -439,19 +465,22 @@
                   </li>
                 </ul>
               </div>
-            </li>
-            <li class="slider__slide slider__slide--coach-4">
+            </div>
+            <div class="slider__slide">
               <picture>
                 <source media="(max-width: 767px)" data-srcset="img/coach-4_mobile@1x.wepb 1x, img/coach-4_mobile@2x.webp 2x">
                 <source media="(max-width: 1199px)" data-srcset="img/coach-4_tablet@1x.wepb 1x, img/coach-4_tablet@2x.webp 2x">
-                <source type="img/webp" data-srcset="img/coach-4_desktop@1x.webp 1x, img/coach-4_desktop@2x.webp 2x">
+                <source type="image/webp" data-srcset="img/coach-4_desktop@1x.webp 1x, img/coach-4_desktop@2x.webp 2x">
 
+                <!-- 1х: 226px x 274px; 2x: 452px x 548px; -->
                 <source media="(max-width: 767px)" data-srcset="img/coach-4_mobile@1x.png 1x, img/coach-4_mobile@2x.png 2x">
+                <!-- 1х: 268px x 303px; 2x: 536px x 588px; -->
                 <source media="(max-width: 1199px)" data-srcset="img/coach-4_tablet@1x.png 1x, img/coach-4_tablet@2x.png 2x">
+                <!-- 1х: 260px x 294px; 2x: 520px x 588px; -->
                 <img class="lazyload" data-src="img/coach-4_desktop@1x.png" data-srcset="img/coach-4_desktop@1x.png 2x" alt="Фотография нашего тренера Марии Кетовой">
               </picture>
               <h3>Мария Кетова</h3>
-              <div class="slider__slide-info slider__slide-info--coach-4">
+              <div class="slider__slide-info">
                 <h3>Мария Кетова</h3>
                 <span>CrossFit</span>
                 <ul class="slider__slide-list">
@@ -466,10 +495,11 @@
                   </li>
                 </ul>
               </div>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
-        <button class="slider__controler slider__controler--next" type="button"><span class="visually-hidden">Вперёд</span></button>
+        <div class="slider__control slider__control--next"></div>
+        <div class="slider__control slider__control--prev"></div>
       </section>
 
       <section class="advantages">
@@ -529,7 +559,7 @@
       </section>
 
       <section class="proposals container">
-        <a class="visually-hidden" id="proposals" href="#">Наши предложения</a>
+        <a id="proposals" href="#"></a>
         <h2>Акции</h2>
         <div class="proposals__wrap">
           <div class="proposals__year-wrap">
@@ -542,10 +572,13 @@
             <picture>
               <source media="(max-width: 767px)" data-srcset="img/proposal_mobile@1x.webp 1x, img/proposal_mobile@2x.webp 2x">
               <source media="(max-width: 1199px)" data-srcset="img/proposal_tablet@1x.webp 1x, img/proposal_tablet@2x.webp 2x">
-              <source type="img/webp" data-srcset="img/proposal_desktop@1x.webp 1x, img/proposal_desktop@2x.webp 2x">
+              <source type="image/webp" data-srcset="img/proposal_desktop@1x.webp 1x, img/proposal_desktop@2x.webp 2x">
 
+              <!-- 1х: 290px x 299px; 2x: 580px x 598px; -->
               <source media="(max-width: 767px)" data-srcset="img/proposal_mobile@1x.png 1x, img/proposal_mobile@2x.png 2x">
+              <!-- 1х: 399px x 462px; 2x: 798px x 924px; -->
               <source media="(max-width: 1199px)" data-srcset="img/proposal_tablet@1x.png 1x, img/proposal_tablet@2x.png 2x">
+              <!-- 1х: 280px x 462px; 2x: 560px x 924px; -->
               <img class="lazyload" data-src="img/proposal_desktop@1x.png" data-srcset="img/proposal_desktop@2x.png 2x" alt="Фотография девушки спортсменки">
             </picture>
           </div>
@@ -573,9 +606,11 @@
               <div class="reviews__card">
                 <picture>
                   <source media="(max-width: 767px)" data-srcset="img/review-photo_mobile@1x.webp 1x, img/review-photo_mobile@2x.webp 2x">
-                  <source type="img/webp" data-srcset="img/review-photo@1x.webp 1x, img/review-photo@2x.webp 2x">
+                  <source type="image/webp" data-srcset="img/review-photo@1x.webp 1x, img/review-photo@2x.webp 2x">
 
+                  <!-- 1х: 68px x 68px; 2x: 136px x 136px; -->
                   <source media="(max-width: 767px)" data-srcset="img/review-photo_mobile@1x.png 1x, img/review-photo_mobile@2x.png 2x">
+                  <!-- 1х: 80px x 80px; 2x: 160px x 160px; -->
                   <img class="lazyload" data-src="img/review-photo@1x.png" data-srcset="img/review-photo@2x.png 2x" alt="Фотография Анны Орловой">
                 </picture>
                 <h3>Анна Орлова</h3>
@@ -584,13 +619,15 @@
             </li>
             <li class="reviews__item">
               <div class="reviews__card">
-                <picture>
-                  <source media="(max-width: 767px)" data-srcset="img/review-photo_mobile@1x.webp 1x, img/review-photo_mobile@2x.webp 2x">
-                  <source type="img/webp" data-srcset="img/review-photo@1x.webp 1x, img/review-photo@2x.webp 2x">
+              <picture>
+                <source media="(max-width: 767px)" data-srcset="img/review-photo_mobile@1x.webp 1x, img/review-photo_mobile@2x.webp 2x">
+                <source type="image/webp" data-srcset="img/review-photo@1x.webp 1x, img/review-photo@2x.webp 2x">
 
-                  <source media="(max-width: 767px)" data-srcset="img/review-photo_mobile@1x.png 1x, img/review-photo_mobile@2x.png 2x">
-                  <img class="lazyload" data-src="img/review-photo@1x.png" data-srcset="img/review-photo@2x.png 2x" alt="Фотография Кати Самсоновой">
-                </picture>
+                <!-- 1х: 68px x 68px; 2x: 136px x 136px; -->
+                <source media="(max-width: 767px)" data-srcset="img/review-photo_mobile@1x.png 1x, img/review-photo_mobile@2x.png 2x">
+                <!-- 1х: 80px x 80px; 2x: 160px x 160px; -->
+                <img class="lazyload" data-src="img/review-photo@1x.png" data-srcset="img/review-photo@2x.png 2x" alt="Фотография Анны Орловой">
+              </picture>
                 <h3>Катя Самсонова</h3>
                 <p>«SyperClub - атмосферное место, где просыпается желание работать над телом, повышается тонус и настроение. Много инвентаря, современные тренажеры для продвинутых спортсменов и начинающих.
                 Отдельная зона для Crossfit и кардио, групповые занятия.
@@ -613,7 +650,7 @@
                   <label for="name">Имя</label>
                 </div>
                 <div class="feedback__form-input">
-                  <input id="tel" type="number" name="tel" required="">
+                  <input id="tel" type="tel" name="tel" required="">
                   <label for="tel">Телефон</label>
                 </div>
               </div>
@@ -630,7 +667,7 @@
                 <p>г. Омск, ул. 60 лет Октября, 7</p>
               </div>
               <div class="feedback__schedule">
-                <a class="visually-hidden" id="schedule" href="#">Часы работы</a>
+                <a id="schedule" href="#"></a>
                 <h3>График работы:</h3>
                 <p>Пн-Вс: c 8:00 до 22:00</p>
               </div>
@@ -699,8 +736,8 @@
       </div>
     </footer>
 
-    <script defer="" src="js/main.js"></script>
     <script defer="" src="js/vendor.js"></script>
+    <script defer="" src="js/main.js"></script>
 
   </body>
 </html>
