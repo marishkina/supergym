@@ -125,8 +125,16 @@
   box-shadow: 0 10px 40px rgba(28, 51, 116, 1);
 }
 
-.reviews__card img {
+.reviews__img img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #5a626f;
+}
+
+.reviews__img {
   @include pseudo;
+  display: block;
   top: 62px;
   left: 50%;
   width: 80px;
@@ -208,11 +216,16 @@
     padding-right: 22px;
   }
 
-  .reviews__card img {
+  .reviews__img {
     top: 40px;
     width: 68px;
     height: 68px;
     margin-left: -72px;
+  }
+
+  .reviews__img img {
+    width: 68px;
+    height: 68px;
   }
 
   .reviews__card h3 {
