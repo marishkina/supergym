@@ -1,0 +1,4 @@
+gulpfile.js
+/source/js/vendor/*.js
+/build/js/vendor.js
+/build/js/main.js
