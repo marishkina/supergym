@@ -23,12 +23,13 @@
 
 .proposals__year-wrap {
   display: flex;
+  background-color: #4169da;
 }
 
 .proposals__year {
   display: flex;
   flex-direction: column;
-  width: 280px;
+  min-width: 280px;
   padding-top: 34px;
   padding-bottom: 27px;
   padding-left: 46px;

@@ -114,13 +114,14 @@
 
 .page-header__main-part-wrap {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .page-header__link {
   @include button;
   width: 234px;
-  height: 61px;
+  min-height: 61px;
   font-weight: bold;
   text-decoration: none;
   color: #ffffff;
@@ -198,6 +199,10 @@
     display: none;
   }
 
+  .page-header__main-part-wrap {
+    justify-content: center;
+  }
+
   .page-header__main-part {
     margin-bottom: 36px;
     padding-top: 75px;
@@ -205,7 +210,7 @@
   }
 
   .page-header__title-wrap {
-    margin-right: 4%;
+    margin-right: 4.4%;
   }
 
   .page-header__main-part span {
@@ -303,7 +308,7 @@
 
   .page-header__link {
     width: 294px;
-    height: 63px;
+    min-height: 63px;
     margin-left: -0.6%;
   }
 }

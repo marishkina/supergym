@@ -116,7 +116,7 @@
 
   &:hover,
   &:focus {
-    margin-bottom: 41px;
+    padding-bottom: 59px;
     border-image-slice: 1;
     border-width: 7px;
     border-image-source: linear-gradient(to top, #003eb7, #ed0233);
@@ -208,7 +208,7 @@
 .subscriptions__link {
   @include button;
   width: 208px;
-  height: 66px;
+  min-height: 66px;
   padding-top: 24px;
   color: $text-color;
   border: 2px solid #1c3374;
@@ -264,7 +264,13 @@
     align-items: center;
   }
 
-  .subscriptions__card-block--active .subscriptions__card {
+  .subscriptions__card-block--no-js {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .subscriptions__card {
     width: 65%;
   }
 }
@@ -298,7 +304,7 @@
     line-height: 24px;
   }
 
-  .subscriptions__card-block--active .subscriptions__card {
+  .subscriptions__card {
     width: 100%;
     padding-top: 21px;
     padding-bottom: 46px;
@@ -306,7 +312,7 @@
 
     &:hover,
     &:focus {
-      margin-bottom: 38px;
+      padding-bottom: 45px;
     }
   }
 
@@ -329,7 +335,8 @@
 
   .subscriptions__card .subscriptions__shadow {
     top: 112px;
-    margin-left: -81px;
+    width: 260px;
+    margin-left: -130px;
     font-size: 80px;
     line-height: 120px;
   }

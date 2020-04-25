@@ -78,18 +78,20 @@
           <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
         </div>
         <div>
-          <picture>
-            <source media="(max-width: 767px)" data-srcset="img/gym-photo_mobile@1x.webp 1x, img/gym-photo_mobile@2x.webp 2x">
-            <source media="(max-width: 1199px)" data-srcset="img/gym-photo_tablet@1x.webp 1x, img/gym-photo_tablet@2x.webp 2x">
-            <source type="image/webp" data-srcset="img/gym-photo_desktop@1x.webp 1x, img/gym-photo_desktop@2x.webp 2x">
+          <div class="gym__img-wrap">
+            <picture>
+              <source media="(max-width: 767px)" data-srcset="img/gym-photo_mobile@1x.webp 1x, img/gym-photo_mobile@2x.webp 2x">
+              <source media="(max-width: 1199px)" data-srcset="img/gym-photo_tablet@1x.webp 1x, img/gym-photo_tablet@2x.webp 2x">
+              <source type="image/webp" data-srcset="img/gym-photo_desktop@1x.webp 1x, img/gym-photo_desktop@2x.webp 2x">
 
-            <!-- 1х: 320px x 313px; 2x: 640px x 626px; -->
-            <source media="(max-width: 767px)" data-srcset="img/gym-photo_mobile@1x.png 1x, img/gym-photo_mobile@2x.png 2x">
-            <!-- 1х: 678px x 345px; 2x: 1356px x 690px; -->
-            <source media="(max-width: 1199px)" data-srcset="img/gym-photo_tablet@1x.png 1x, img/gym-photo_tablet@2x.png 2x">
-            <!-- 1х: 660px x 401px; 2x: 1320px x 802px; -->
-            <img class="lazyload" data-src="img/gym-photo_desktop@1x.png" data-srcset="img/gym-photo_desktop@2x.png 2x" alt="Фотография тренажёрного зала">
-          </picture>
+              <!-- 1х: 320px x 313px; 2x: 640px x 626px; -->
+              <source media="(max-width: 767px)" data-srcset="img/gym-photo_mobile@1x.png 1x, img/gym-photo_mobile@2x.png 2x">
+              <!-- 1х: 678px x 345px; 2x: 1356px x 690px; -->
+              <source media="(max-width: 1199px)" data-srcset="img/gym-photo_tablet@1x.png 1x, img/gym-photo_tablet@2x.png 2x">
+              <!-- 1х: 660px x 401px; 2x: 1320px x 802px; -->
+              <img class="lazyload" data-src="img/gym-photo_desktop@1x.png" data-srcset="img/gym-photo_desktop@2x.png 2x" alt="Фотография тренажёрного зала">
+            </picture>
+          </div>
           <div class="gym__video">
             <div class="gym__video-play"></div>
             <div class="gym__video-poster">
@@ -229,18 +231,20 @@
           <p>Ежегодные соревнования по CrossFit</p>
           <a class="promo__link" href="#">Заполнить заявку</a>
         </div>
-        <picture>
-          <source media="(max-width: 767px)" data-srcset="img/promo_mobile@1x.webp 1x, img/promo_mobile@2x.webp 2x">
-          <source media="(max-width: 1199px)" data-srcset="img/promo_tablet@1x.webp 1x, img/promo_tablet@2x.webp 2x">
-          <source type="image/webp" data-srcset="img/promo_desktop@1x.webp 1x, img/promo_desktop@2x.webp 2x">
+        <div class="promo__img-wrap">
+          <picture>
+            <source media="(max-width: 767px)" data-srcset="img/promo_mobile@1x.webp 1x, img/promo_mobile@2x.webp 2x">
+            <source media="(max-width: 1199px)" data-srcset="img/promo_tablet@1x.webp 1x, img/promo_tablet@2x.webp 2x">
+            <source type="image/webp" data-srcset="img/promo_desktop@1x.webp 1x, img/promo_desktop@2x.webp 2x">
 
-          <!-- 1х: 280px x 462px; 2x: 560px x 924px; -->
-          <source media="(max-width: 767px)" data-srcset="img/promo_mobile@1x.png 1x, img/promo_mobile@2x.png 2x">
-          <!-- 1х: 386px x 292px; 2x: 772px x 582px; -->
-          <source media="(max-width: 1199px)" data-srcset="img/promo_tablet@1x.png 1x, img/promo_tablet@2x.png 2x">
-          <!-- 1х: 660px x 500px; 2x: 1320px x 1000px; -->
-          <img class="lazyload" data-src="img/promo_desktop@1x.png" data-srcset="img/promo_desktop@2x.png 2x" alt="Фотография cпортсмена">
-        </picture>
+            <!-- 1х: 280px x 462px; 2x: 560px x 924px; -->
+            <source media="(max-width: 767px)" data-srcset="img/promo_mobile@1x.png 1x, img/promo_mobile@2x.png 2x">
+            <!-- 1х: 386px x 292px; 2x: 772px x 582px; -->
+            <source media="(max-width: 1199px)" data-srcset="img/promo_tablet@1x.png 1x, img/promo_tablet@2x.png 2x">
+            <!-- 1х: 660px x 500px; 2x: 1320px x 1000px; -->
+            <img class="lazyload" data-src="img/promo_desktop@1x.png" data-srcset="img/promo_desktop@2x.png 2x" alt="Фотография cпортсмена">
+          </picture>
+        </div>
       </section>
 
       <section class="slider container">
@@ -499,9 +503,9 @@
           <h2>Наши преимущества</h2>
           <div class="advantages__wrap">
             <div class="advantages__card-wrap">
-              <div class="advantages__card advantages__card--left-align advantages__card--border">
-                <div class="advantages__card-facts">
-                  <span class="advantages__span">900</span>
+              <div class="advantages__card advantages__card--left-align">
+                <div class="advantages__card-facts  advantages__card-facts--padding">
+                  <span class="advantages__span advantages__span-1"></span>
                   <span class="advantages__span-font">кв/м</span>
                 </div>
                 <div class="advantages__card-facts">
@@ -509,9 +513,9 @@
                   <p>Занимайтесь без очередей и толпучки</p>
                 </div>
               </div>
-              <div class="advantages__card advantages__card--right-align advantages__card--border advantages__card--second-border">
-                <div class="advantages__card-facts">
-                  <span class="advantages__span">70</span>
+              <div class="advantages__card advantages__card--right-align">
+                <div class="advantages__card-facts advantages__card-facts--padding">
+                  <span class="advantages__span advantages__span-2"></span>
                   <span class="advantages__span-font">машин</span>
                 </div>
                 <div class="advantages__card-facts">
@@ -525,9 +529,9 @@
               <p>Современные тренажеры на все группы мышц</p>
             </div>
             <div class="advantages__card-wrap">
-              <div class="advantages__card advantages__card--left-align">
+              <div class="advantages__card advantages__card--left-align advantages__card--border">
                 <div class="advantages__card-facts">
-                  <span class="advantages__span">350</span>
+                  <span class="advantages__span advantages__span-3"></span>
                   <span class="advantages__span-font">мест</span>
                 </div>
                 <div class="advantages__card-facts">
@@ -535,9 +539,9 @@
                   <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
                 </div>
               </div>
-              <div class="advantages__card advantages__card--right-align advantages__card--padding">
+              <div class="advantages__card advantages__card--right-align advantages__card--padding advantages__card--border advantages__card--second-border">
                 <div class="advantages__card-facts">
-                  <span class="advantages__span">5+</span>
+                  <span class="advantages__span advantages__span-4"></span>
                   <span class="advantages__span-font">лет</span>
                 </div>
                 <div class="advantages__card-facts">
@@ -642,7 +646,7 @@
                   <label for="name">Имя</label>
                 </div>
                 <div class="feedback__form-input">
-                  <input id="tel" type="tel" name="tel" required>
+                  <input id="tel" type="tel" name="tel" minlength="9" required>
                   <label for="tel">Телефон</label>
                 </div>
               </div>
@@ -651,27 +655,29 @@
           </div>
         </div>
         <div class="feedback__contacts">
-          <h2>Контакты</h2>
-          <div class="feedback__contacts-wrap">
-            <div class="feedback__address-wrap">
-              <div class="feedback__address">
-                <h3>Адрес:</h3>
-                <p>г. Омск, ул. 60 лет Октября, 7</p>
+          <div class="feedback__contacts-block">
+            <h2>Контакты</h2>
+            <div class="feedback__contacts-wrap">
+              <div class="feedback__address-wrap">
+                <div class="feedback__address">
+                  <h3>Адрес:</h3>
+                  <p>г. Омск, ул. 60 лет Октября, 7</p>
+                </div>
+                <div class="feedback__schedule">
+                  <a id="schedule" href="#"></a>
+                  <h3>График работы:</h3>
+                  <p>Пн-Вс: c 8:00 до 22:00</p>
+                </div>
               </div>
-              <div class="feedback__schedule">
-                <a id="schedule" href="#"></a>
-                <h3>График работы:</h3>
-                <p>Пн-Вс: c 8:00 до 22:00</p>
-              </div>
-            </div>
-            <div class="feedback__tel-wrap">
-              <div class="feedback__tel">
-                <h3>Телефон:</h3>
-                <a class="feedback__link" href="tel:+78005555555">8-800-555-55-55</a>
-              </div>
-              <div class="feedback__mail">
-                <h3>Email:</h3>
-                <a class="feedback__link" href="mailto:info@sd.ru">omsk@supergym.ru</a>
+              <div class="feedback__tel-wrap">
+                <div class="feedback__tel">
+                  <h3>Телефон:</h3>
+                  <a class="feedback__link" href="tel:+78005555555">8-800-555-55-55</a>
+                </div>
+                <div class="feedback__mail">
+                  <h3>Email:</h3>
+                  <a class="feedback__link" href="mailto:info@sd.ru">omsk@supergym.ru</a>
+                </div>
               </div>
             </div>
           </div>
