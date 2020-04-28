@@ -78,20 +78,18 @@
           <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
         </div>
         <div>
-          <div class="gym__img-wrap">
-            <picture>
-              <source type="image/webp" media="(max-width: 767px)" data-srcset="img/gym-photo_mobile@1x.webp 1x, img/gym-photo_mobile@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1199px)" data-srcset="img/gym-photo_tablet@1x.webp 1x, img/gym-photo_tablet@2x.webp 2x">
-              <source type="image/webp" data-srcset="img/gym-photo_desktop@1x.webp 1x, img/gym-photo_desktop@2x.webp 2x">
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)" data-srcset="img/gym-photo_mobile@1x.webp 1x, img/gym-photo_mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1199px)" data-srcset="img/gym-photo_tablet@1x.webp 1x, img/gym-photo_tablet@2x.webp 2x">
+            <source type="image/webp" data-srcset="img/gym-photo_desktop@1x.webp 1x, img/gym-photo_desktop@2x.webp 2x">
 
-              <!-- 1х: 320px x 313px; 2x: 640px x 626px; -->
-              <source media="(max-width: 767px)" data-srcset="img/gym-photo_mobile@1x.png 1x, img/gym-photo_mobile@2x.png 2x">
-              <!-- 1х: 678px x 345px; 2x: 1356px x 690px; -->
-              <source media="(max-width: 1199px)" data-srcset="img/gym-photo_tablet@1x.png 1x, img/gym-photo_tablet@2x.png 2x">
-              <!-- 1х: 660px x 401px; 2x: 1320px x 802px; -->
-              <img class="lazyload" data-src="img/gym-photo_desktop@1x.png" data-srcset="img/gym-photo_desktop@2x.png 2x" alt="Фотография тренажёрного зала">
-            </picture>
-          </div>
+            <!-- 1х: 320px x 313px; 2x: 640px x 626px; -->
+            <source media="(max-width: 767px)" data-srcset="img/gym-photo_mobile@1x.png 1x, img/gym-photo_mobile@2x.png 2x">
+            <!-- 1х: 678px x 345px; 2x: 1356px x 690px; -->
+            <source media="(max-width: 1199px)" data-srcset="img/gym-photo_tablet@1x.png 1x, img/gym-photo_tablet@2x.png 2x">
+            <!-- 1х: 660px x 401px; 2x: 1320px x 802px; -->
+            <img class="lazyload" data-src="img/gym-photo_desktop@1x.png" data-srcset="img/gym-photo_desktop@2x.png 2x" alt="Фотография тренажёрного зала">
+          </picture>
           <div class="gym__video">
             <div class="gym__video-play"></div>
             <div class="gym__video-poster">
@@ -650,7 +648,7 @@
                   <label for="name">Имя</label>
                 </div>
                 <div class="feedback__form-input">
-                  <input id="tel" type="tel" name="tel" minlength="9" required>
+                  <input id="tel" type="tel" name="tel" required value="">
                   <label for="tel">Телефон</label>
                 </div>
               </div>

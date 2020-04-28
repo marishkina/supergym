@@ -131,14 +131,18 @@
   padding-left: 40px;
 }
 
-@media (max-width: 1279px) {
+@media (max-width: 1300px) {
+  .slider__container {
+    width: 1100px;
+  }
+
   .slider__control {
     &--next {
-      margin-left: 48.4%;
+      margin-left: 47.5%;
     }
 
     &--prev {
-      margin-left: -50%;
+      margin-left: -49%;
     }
   }
 }

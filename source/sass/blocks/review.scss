@@ -18,28 +18,26 @@
 }
 
 .reviews__list-wrap {
-  position: relative;
   width: 560px;
-  min-height: 242px;
   margin: 0 auto;
-  overflow: hidden;
 }
 
 .reviews__list {
-  width: auto;
-  height: 242px;
   margin: 0;
   padding: 0;
   list-style: none;
-  font-size: 0;
 }
 
 .reviews__item {
   position: relative;
-  display: inline-block;
   width: 560px;
-  height: 242px;
+  min-height: 242px;
   background-color: #1c3374;
+  display: none;
+}
+
+.reviews__item--active {
+  display: block;
 }
 
 .reviews__controler {
@@ -92,37 +90,24 @@
 .reviews__card p {
   @include roboto;
   width: 328px;
-  height: 90px;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 16px;
   font-weight: normal;
   line-height: 22px;
   color: #ffffff;
-  overflow-y: hidden;
-}
-
-.reviews__card > p:hover {
-  overflow-y: auto;
-}
-
-.reviews__card > p::-webkit-scrollbar {
-  width: 3px;
-}
-
-.reviews__card > p::-webkit-scrollbar-thumb {
-  border-radius: 2px;
-  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .reviews__card {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 560px;
   padding-top: 54px;
   padding-left: 170px;
   padding-right: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 58px;
   box-sizing: border-box;
-  box-shadow: 0 10px 40px rgba(28, 51, 116, 1);
 }
 
 .reviews__img img {
@@ -180,6 +165,10 @@
   .reviews__card {
     padding-left: 173px;
   }
+
+  .reviews__img {
+    margin-left: -215px;
+  }
 }
 
 @media (max-width: $tablet-width) {
@@ -196,30 +185,26 @@
   }
 
   .reviews__list-wrap {
-    width: 226px;
-    height: 335px;
+    width: 78%;
   }
 
   .reviews__item {
-    width: 226px;
-    height: 335px;
-  }
-
-  .reviews__list {
-    height: 335px;
+    width: 100%;
   }
 
   .reviews__card {
+    width: 100%;
     padding-top: 47px;
-    padding-left: 22px;
-    padding-right: 22px;
+    padding-left: 9.7%;
+    padding-right: 9.7%;
+    padding-bottom: 36px;
   }
 
   .reviews__img {
     top: 40px;
     width: 68px;
     height: 68px;
-    margin-left: -72px;
+    margin-left: -32%;
   }
 
   .reviews__img img {
@@ -228,11 +213,12 @@
   }
 
   .reviews__card h3 {
-    width: 80px;
+    width: 44%;
     margin-bottom: 24px;
-    margin-left: auto;
-    margin-right: 0;
+    margin-left: 56%;
     line-height: 26px;
+    overflow: hidden;
+    text-overflow: ellipsis;
     white-space: normal;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -241,7 +227,6 @@
 
   .reviews__card p {
     width: 100%;
-    height: 180px;
     text-align: center;
   }
 
@@ -252,11 +237,11 @@
     background-size: 10px 19px;
 
     &--prev {
-      margin-left: -145px;
+      margin-left: -45.3%;
     }
 
     &--next {
-      margin-left: 135px;
+      margin-left: 42.1%;
     }
   }
 }
