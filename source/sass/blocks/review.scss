@@ -193,6 +193,8 @@
   }
 
   .reviews__card {
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
     padding-top: 47px;
     padding-left: 9.7%;
@@ -201,10 +203,14 @@
   }
 
   .reviews__img {
-    top: 40px;
+    position: relative;
+    // top: 40px;
+    top: -7px;
     width: 68px;
     height: 68px;
-    margin-left: -32%;
+
+    margin-left: -39.5%;
+    margin-bottom: 8px;
   }
 
   .reviews__img img {
@@ -215,7 +221,7 @@
   .reviews__card h3 {
     width: 44%;
     margin-bottom: 24px;
-    margin-left: 56%;
+    margin-left: 58%;
     line-height: 26px;
     overflow: hidden;
     text-overflow: ellipsis;
