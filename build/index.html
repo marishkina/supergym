@@ -652,12 +652,14 @@
             <form class="feedback__form" action="#" method="get">
               <div class="feedback__form-input-wrap">
                 <div class="feedback__form-input">
-                  <input id="name" type="text" name="name" required="">
-                  <label for="name">Имя</label>
+                  <label>
+                      <input id="name" type="text" name="name" required="" placeholder="Имя">
+                  </label>
                 </div>
                 <div class="feedback__form-input">
-                  <input id="tel" type="text" name="tel" placeholder="Номер телефона" data-rule-required="true" data-rule-minlength="10" data-msg="Введите номер телефона">
-                  <label for="tel">Телефон</label>
+                  <label>
+                    <input id="tel" type="text" name="tel" placeholder="Телефон" data-rule-required="true" data-rule-minlength="10">
+                  </label>
                 </div>
               </div>
               <button class="feedback__form-button" type="submit">Отправить</button>

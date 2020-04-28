@@ -8,7 +8,7 @@
       return /\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value);
     });
 
-    $('feddback').validate({
+    $('.feedback__form').validate({
       rules: {
         tel: {
           checkMask: true
@@ -16,7 +16,7 @@
       },
       messages: {
         tel: {
-          checkMask: 'Введите полный номер телефона'
+          checkMask: 'Введите полный номер'
         }
       }
     });

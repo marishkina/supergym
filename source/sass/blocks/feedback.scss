@@ -18,7 +18,7 @@
 .feedback__form-wrap h2 {
   @include bebasNeue;
   margin-top: 0;
-  margin-bottom: 27px;
+  margin-bottom: 37px;
   margin-left: 2px;
   font-size: 49px;
   font-weight: normal;
@@ -59,29 +59,24 @@
 .feedback__form-input {
   position: relative;
   width: 190px;
-  margin-bottom: 28px;
+  margin-bottom: 49px;
   box-sizing: border-box;
 
   & label {
     position: absolute;
-    top: 8px;
+    top: -10px;
     left: 50%;
     margin-left: -93px;
     font-size: 14px;
     font-weight: normal;
     line-height: 16px;
-    color: #ffffff;
-    transition: 0.5s;
-    pointer-events: none;
+    color: #ed0233;
+    display: block;
   }
 }
 
-.feedback__form-input input:focus ~ label,
-.feedback__form-input input:valid ~ label {
-  top: -12px;
-  font-size: 12px;
-  color: rgba(255, 255, 255, 0.5);
-  display: none;
+.feedback__form-input input::placeholder {
+  color: #ffffff;
 }
 
 .feedback__form-button {
@@ -105,16 +100,6 @@
   &:active {
     color: $text-color;
   }
-}
-
-.feedback__form-input input[type="number"]::-webkit-inner-spin-button,
-.feedback__form-input input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.feedback__form-input input[type="number"] {
-  -moz-appearance: textfield;
 }
 
 .feedback__contacts-block {
@@ -235,7 +220,7 @@
   }
 
   .feedback__form-wrap h2 {
-    margin-bottom: 28px;
+    margin-bottom: 38px;
     font-size: 42px;
     line-height: 42px;
     letter-spacing: 1.4px;
@@ -320,7 +305,7 @@
 
 @media (max-width: $tablet-width) {
   .feedback {
-    padding-bottom: 63px;
+    padding-bottom: 64px;
   }
 
   .feedback__form {
@@ -334,7 +319,7 @@
   }
 
   .feedback__form-wrap h2 {
-    margin-bottom: 31px;
+    margin-bottom: 41px;
     margin-left: -1px;
     font-size: 32px;
     line-height: 32px;
@@ -348,6 +333,11 @@
 
   .feedback__form-input {
     width: 290px;
+    margin-bottom: 60px;
+
+    &:last-child {
+      margin-bottom: 49px;
+    }
   }
 
   .feedback__form input {
