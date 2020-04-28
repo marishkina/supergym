@@ -22,6 +22,11 @@
         },
         1200: {
           slidesPerView: 4,
+          spaceBetween: 20,
+          slidesPerGroup: 4,
+        },
+        1300: {
+          slidesPerView: 4,
           spaceBetween: 40,
           slidesPerGroup: 4,
         },
